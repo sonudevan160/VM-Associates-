@@ -1,101 +1,2155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VM Associates | Loans & Insurance</title>
-<style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#082e69;background:#fff}
-.top{background:#063d8f;color:#fff;padding:10px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:14px}.top a{color:#fff;text-decoration:none}
-header{padding:20px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#fff}.brand{display:flex;align-items:center;gap:15px}.mark{width:70px;height:70px;border:4px solid #0864ca;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:30px;color:#0864ca;position:relative}.mark:after{content:"₹";position:absolute;bottom:-5px;right:-5px;background:#e5b11c;color:#fff;border-radius:50%;width:25px;height:25px;font-size:16px;text-align:center;padding-top:3px}.brand h1{margin:0;font-family:Georgia,serif;font-size:38px;color:#0757bd}.brand h1 span{color:#d6a500}.tag{font-family:Georgia,serif;font-style:italic;color:#122d59}
-nav{border-top:1px solid #dbe8f6;border-bottom:1px solid #dbe8f6;padding:10px 5%;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}nav a{padding:11px 17px;color:#082e69;text-decoration:none;font-weight:700;border-radius:8px}nav a:hover,nav a:first-child{background:#0864ca;color:#fff}.wa{background:#0757bd!important;color:#fff!important}
-.hero{min-height:390px;padding:65px 6%;display:flex;align-items:center;justify-content:space-between;gap:40px;background:linear-gradient(120deg,#eaf5ff,#fff)}.hero h2{font-family:Georgia,serif;font-size:55px;line-height:1;margin:0 0 20px}.hero h2 span{color:#0864ca}.hero p{font-size:19px;max-width:560px}.hero-box{background:#fff;border-radius:24px;padding:35px;box-shadow:0 12px 35px #0757bd22;max-width:430px}.hero-box strong{font-size:23px}.btn{display:inline-block;text-decoration:none;background:#0757bd;color:#fff;padding:13px 20px;border-radius:25px;font-weight:700;margin:8px 6px 0 0}.gold{background:#e2ad00;color:#122d59}
-section{padding:55px 6%;max-width:1200px;margin:auto}.section-title{text-align:center;font-family:Georgia,serif;font-size:34px;color:#0757bd;margin:0 0 28px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.card{padding:28px;border-radius:22px;box-shadow:0 8px 28px #0b4f8d1a;background:#fff;border:1px solid #d8e9f8}.loan{border-top:8px solid #dfad00}.insurance{border-top:8px solid #0757bd}.card h3{font-size:30px;margin:0 0 18px}.loan h3{color:#b58700}.insurance h3{color:#0757bd}.card ul{padding:0;margin:0}.card li{list-style:none;padding:11px 0;border-bottom:1px solid #e6eef7;font-size:17px}.card li:before{content:"✓";font-weight:bold;color:#0757bd;margin-right:10px}.priority{font-size:14px;color:#555;font-style:italic}
-.other{background:#eef7ff;max-width:none}.other-inner{max-width:1200px;margin:auto}.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.service{background:#fff;border:1px solid #d4e6f7;border-radius:15px;padding:22px 10px;text-align:center;min-height:130px}.icon{font-size:30px}.service b{display:block;margin-top:8px}
-.contact{background:linear-gradient(135deg,#063f93,#0877dc);color:#fff;max-width:none;text-align:center}.contact a{color:#fff}.contact h2{font-size:32px}.contact p{font-size:18px}
-footer{background:#052e6b;color:#fff;padding:25px 6%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px}
-@media(max-width:850px){.hero{flex-direction:column;text-align:center}.grid{grid-template-columns:1fr}.service-grid{grid-template-columns:repeat(2,1fr)}header{justify-content:center;text-align:center}.brand{flex-direction:column}.brand h1{font-size:31px}.tag{display:none}}
-@media(max-width:500px){.service-grid{grid-template-columns:1fr 1fr}.hero h2{font-size:40px}.top{justify-content:center;text-align:center}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VM Associates | Loans, Insurance & Digital Services in Kerala</title>
+  <meta name="description" content="VM Associates Balaramapuram - Trusted provider of Home Loans, Business Loans, Vehicle & Health Insurance, E-Mithram, and Digital Services in Thiruvananthapuram, Kerala.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #0a2540;
+      --primary-dark: #06182c;
+      --primary-light: #163d6b;
+      --accent: #d99b16;
+      --accent-hover: #b8800b;
+      --accent-gradient: linear-gradient(135deg, #f5b942 0%, #d99b16 100%);
+      --accent-subtle: rgba(217, 155, 22, 0.12);
+      --brand-blue: #0864ca;
+      --brand-blue-hover: #0752a7;
+      --brand-blue-subtle: rgba(8, 100, 202, 0.08);
+      --bg-body: #f8fafc;
+      --surface: #ffffff;
+      --surface-glass: rgba(255, 255, 255, 0.85);
+      --border-light: rgba(14, 46, 88, 0.08);
+      --border-accent: rgba(217, 155, 22, 0.3);
+      --text-main: #0e2439;
+      --text-muted: #52667a;
+      --text-subtle: #798da3;
+      --shadow-sm: 0 2px 8px rgba(11, 37, 69, 0.04);
+      --shadow-md: 0 10px 30px -5px rgba(11, 37, 69, 0.08), 0 4px 10px -2px rgba(11, 37, 69, 0.04);
+      --shadow-lg: 0 20px 40px -8px rgba(11, 37, 69, 0.12), 0 8px 18px -4px rgba(11, 37, 69, 0.06);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient Background Mesh */
+    .bg-mesh {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -10;
+      pointer-events: none;
+      background: 
+        radial-gradient(circle at 10% 20%, rgba(8, 100, 202, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 90% 15%, rgba(217, 155, 22, 0.05) 0%, transparent 35%),
+        radial-gradient(circle at 50% 80%, rgba(10, 37, 64, 0.03) 0%, transparent 50%),
+        var(--bg-body);
+    }
+
+    /* Top Information Strip */
+    .top-bar {
+      background: linear-gradient(90deg, #06182c 0%, #0a2540 100%);
+      color: #e2e8f0;
+      font-size: 0.8125rem;
+      padding: 8px 6%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .top-bar-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .top-bar-items {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .top-bar-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .top-bar-item:hover {
+      color: #f5b942;
+    }
+
+    .top-bar-item svg {
+      width: 14px;
+      height: 14px;
+      fill: none;
+      stroke: #d99b16;
+      stroke-width: 2;
+    }
+
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(34, 197, 94, 0.15);
+      color: #4ade80;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid rgba(74, 222, 128, 0.25);
+    }
+
+    .badge-status-dot {
+      width: 6px;
+      height: 6px;
+      background: #4ade80;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #4ade80;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    /* Main Navigation Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+      transition: all 0.3s ease;
+    }
+
+    .header-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 14px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* Brand Logo */
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #0a2540 0%, #163d6b 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.35rem;
+      position: relative;
+      box-shadow: 0 8px 20px -4px rgba(8, 100, 202, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .brand-mark::after {
+      content: '₹';
+      position: absolute;
+      bottom: -4px;
+      right: -4px;
+      background: var(--accent-gradient);
+      color: #06182c;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      font-size: 13px;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .brand-text h1 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--primary);
+      line-height: 1.15;
+    }
+
+    .brand-text h1 span {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-text .tagline {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    /* Navigation Links */
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-link {
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--brand-blue);
+      background: var(--brand-blue-subtle);
+    }
+
+    .nav-cta {
+      margin-left: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      background: #25d366;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-cta svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      fill: currentColor;
+    }
+
+    .nav-cta:hover {
+      background: #20bd5a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      color: var(--primary);
+    }
+
+    /* Common Button Classes */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 26px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.2;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0864ca 0%, #074ea1 100%);
+      color: #ffffff;
+      box-shadow: 0 6px 20px -2px rgba(8, 100, 202, 0.38);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #0a73e6 0%, #0859b8 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -2px rgba(8, 100, 202, 0.48);
+      color: #ffffff;
+    }
+
+    .btn-gold {
+      background: var(--accent-gradient);
+      color: #0c1a2c;
+      font-weight: 800;
+      box-shadow: 0 6px 22px -3px rgba(217, 155, 22, 0.45);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px -2px rgba(217, 155, 22, 0.6);
+      filter: brightness(1.05);
+      color: #081524;
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--primary);
+      border: 1.5px solid rgba(14, 46, 88, 0.15);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-outline:hover {
+      background: #ffffff;
+      border-color: var(--brand-blue);
+      color: var(--brand-blue);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 70px 6% 60px;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background: rgba(8, 100, 202, 0.08);
+      border: 1px solid rgba(8, 100, 202, 0.18);
+      color: var(--brand-blue);
+      font-size: 0.825rem;
+      font-weight: 700;
+      width: fit-content;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.12;
+      color: var(--primary);
+      letter-spacing: -0.03em;
+    }
+
+    .hero-title .gradient-text {
+      background: linear-gradient(135deg, #0864ca 0%, #063d8f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline;
+    }
+
+    .hero-title .gold-accent {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline;
+    }
+
+    .hero-desc {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      max-width: 540px;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .hero-stats-row {
+      display: flex;
+      gap: 30px;
+      margin-top: 15px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(14, 46, 88, 0.08);
+    }
+
+    .hero-stat-item h3 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .hero-stat-item p {
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Hero Right Visual / Card */
+    .hero-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(14, 46, 88, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: var(--accent-gradient);
+    }
+
+    .card-badge-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .card-badge-top span {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-hover);
+      background: var(--accent-subtle);
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+    }
+
+    .hero-card-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .hero-card-sub {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      margin-bottom: 24px;
+    }
+
+    .service-mini-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .service-mini-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      background: #f8fafc;
+      border: 1px solid #edf2f7;
+      transition: all 0.2s ease;
+    }
+
+    .service-mini-item:hover {
+      background: #ffffff;
+      border-color: rgba(8, 100, 202, 0.25);
+      box-shadow: var(--shadow-sm);
+      transform: translateX(4px);
+    }
+
+    .mini-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .mini-icon.gold {
+      background: rgba(217, 155, 22, 0.15);
+      color: #b8800b;
+    }
+
+    .mini-icon.blue {
+      background: rgba(8, 100, 202, 0.12);
+      color: #0864ca;
+    }
+
+    .mini-icon.green {
+      background: rgba(16, 185, 129, 0.12);
+      color: #059669;
+    }
+
+    .mini-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.2;
+    }
+
+    .mini-text b {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+
+    .mini-text span {
+      display: block;
+      font-size: 0.775rem;
+      color: var(--text-subtle);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 70px 6%;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 50px;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.8125rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--brand-blue);
+      margin-bottom: 8px;
+      background: rgba(8, 100, 202, 0.08);
+      padding: 4px 14px;
+      border-radius: var(--radius-pill);
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    /* Main Services Cards */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .service-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 38px 34px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-light);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-card.loan-card {
+      border-top: 6px solid #d99b16;
+    }
+
+    .service-card.insurance-card {
+      border-top: 6px solid #0864ca;
+    }
+
+    .card-top-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .card-header-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .loan-card .card-header-icon {
+      background: rgba(217, 155, 22, 0.12);
+      color: #b8800b;
+    }
+
+    .insurance-card .card-header-icon {
+      background: rgba(8, 100, 202, 0.12);
+      color: #0864ca;
+    }
+
+    .card-header-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.2;
+    }
+
+    .card-top-header h3 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .card-top-header .tag-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 2px;
+      display: block;
+    }
+
+    .loan-card .tag-badge {
+      color: #b8800b;
+    }
+
+    .insurance-card .tag-badge {
+      color: #0864ca;
+    }
+
+    .service-item-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .service-item-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(14, 46, 88, 0.06);
+      font-size: 0.975rem;
+      color: var(--text-main);
+    }
+
+    .service-item-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .check-badge {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .loan-card .check-badge {
+      background: rgba(217, 155, 22, 0.18);
+      color: #b8800b;
+    }
+
+    .insurance-card .check-badge {
+      background: rgba(8, 100, 202, 0.15);
+      color: #0864ca;
+    }
+
+    .check-badge svg {
+      width: 13px;
+      height: 13px;
+      stroke: currentColor;
+      stroke-width: 3;
+      fill: none;
+    }
+
+    .service-item-list li strong {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .service-item-list li span {
+      display: block;
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .card-footer-action {
+      padding-top: 20px;
+      border-top: 1px dashed rgba(14, 46, 88, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .card-footer-action .note {
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+    }
+
+    /* Loan Interactive EMI Calculator */
+    .calculator-section {
+      background: linear-gradient(180deg, #ffffff 0%, #f1f6fc 100%);
+      border-radius: var(--radius-lg);
+      padding: 50px 45px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-light);
+      margin-top: 40px;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 45px;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .calc-sliders {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .calc-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .calc-label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.925rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .calc-value-display {
+      background: rgba(8, 100, 202, 0.08);
+      color: var(--brand-blue);
+      padding: 4px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
+
+    .calc-slider {
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      outline: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+
+    .calc-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #0864ca;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(8, 100, 202, 0.4);
+      border: 3px solid #ffffff;
+      transition: transform 0.15s ease;
+    }
+
+    .calc-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+    }
+
+    .calc-slider-limits {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-subtle);
+    }
+
+    .calc-result-box {
+      background: linear-gradient(135deg, #0a2540 0%, #163d6b 100%);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      color: #ffffff;
+      box-shadow: 0 15px 35px -5px rgba(10, 37, 64, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .calc-result-box::after {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 140px;
+      height: 140px;
+      background: rgba(217, 155, 22, 0.12);
+      border-radius: 50%;
+    }
+
+    .calc-result-header {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      font-weight: 700;
+    }
+
+    .calc-emi-amount {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #f5b942;
+      margin: 8px 0 20px;
+      line-height: 1;
+    }
+
+    .calc-breakdown-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.875rem;
+      color: #cbd5e1;
+    }
+
+    .calc-breakdown-row b {
+      color: #ffffff;
+    }
+
+    .calc-cta-btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    /* Other Digital & Citizen Services */
+    .other-services-wrapper {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 60px 5%;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      margin-top: 40px;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .bento-card {
+      background: #f8fafc;
+      border: 1px solid #e6eef7;
+      border-radius: var(--radius-md);
+      padding: 26px 20px;
+      text-align: center;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .bento-card:hover {
+      background: #ffffff;
+      border-color: rgba(8, 100, 202, 0.3);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .bento-icon-wrapper {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(8, 100, 202, 0.1) 0%, rgba(217, 155, 22, 0.1) 100%);
+      display: grid;
+      place-items: center;
+      color: var(--brand-blue);
+      transition: transform 0.3s ease;
+    }
+
+    .bento-card:hover .bento-icon-wrapper {
+      transform: scale(1.1) rotate(4deg);
+      color: var(--accent);
+    }
+
+    .bento-icon-wrapper svg {
+      width: 26px;
+      height: 26px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .bento-card h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .bento-card p {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Trust & Why Choose Us Section */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .feature-item {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      padding: 26px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+    }
+
+    .feature-item:hover {
+      border-color: rgba(8, 100, 202, 0.25);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .feature-icon-pill {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(8, 100, 202, 0.08);
+      color: var(--brand-blue);
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+    }
+
+    .feature-icon-pill svg {
+      width: 22px;
+      height: 22px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .feature-item h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .feature-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Contact Section */
+    .contact-banner {
+      background: linear-gradient(135deg, #062348 0%, #0a3a78 50%, #0864ca 100%);
+      border-radius: var(--radius-lg);
+      padding: 55px 6%;
+      color: #ffffff;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+      margin-top: 40px;
+    }
+
+    .contact-banner::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(217, 155, 22, 0.15);
+      pointer-events: none;
+    }
+
+    .contact-banner-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-banner h2 {
+      font-size: clamp(2rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .contact-banner p {
+      font-size: 1.05rem;
+      color: #e2e8f0;
+      margin-bottom: 24px;
+    }
+
+    .contact-info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-pill-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 14px 20px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .contact-pill-item:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateX(4px);
+    }
+
+    .contact-pill-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--accent-gradient);
+      color: #06182c;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .contact-pill-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      fill: none;
+    }
+
+    .contact-pill-text b {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #fbd38d;
+    }
+
+    .contact-pill-text span {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    /* FAQ Section */
+    .faq-wrapper {
+      max-width: 860px;
+      margin: 40px auto 0;
+    }
+
+    .faq-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .faq-item:hover {
+      border-color: rgba(8, 100, 202, 0.2);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      padding: 18px 24px;
+      text-align: left;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .faq-icon-arrow {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-icon-arrow {
+      transform: rotate(180deg);
+      stroke: var(--brand-blue);
+    }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+      padding: 0 24px;
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      line-height: 1.6;
+    }
+
+    .faq-item.active .faq-content {
+      max-height: 300px;
+      padding-bottom: 20px;
+      transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    }
+
+    /* Footer */
+    footer {
+      background: #041221;
+      color: #94a3b8;
+      padding: 50px 6% 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      margin-top: 80px;
+    }
+
+    .footer-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand h2 {
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .footer-brand h2 span {
+      color: #f5b942;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: #64748b;
+      max-width: 320px;
+      line-height: 1.6;
+    }
+
+    .footer-links h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: #f5b942;
+    }
+
+    .footer-bottom {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 0.8125rem;
+    }
+
+    /* Floating Quick Action Bar for Mobile & Desktop */
+    .floating-action-bar {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+    }
+
+    .float-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 22px;
+      border-radius: var(--radius-pill);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .float-btn.wa {
+      background: #25d366;
+    }
+
+    .float-btn.wa:hover {
+      background: #1fae54;
+      transform: translateY(-3px) scale(1.02);
+    }
+
+    .float-btn.callback {
+      background: var(--accent-gradient);
+      color: #06182c;
+    }
+
+    .float-btn.callback:hover {
+      transform: translateY(-3px) scale(1.02);
+      filter: brightness(1.06);
+    }
+
+    .float-btn svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .float-btn.wa svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .calc-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-banner-grid {
+        grid-template-columns: 1fr;
+      }
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+      .top-bar-items {
+        justify-content: center;
+      }
+      nav {
+        display: none;
+      }
+      nav.nav-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: var(--shadow-lg);
+        border-bottom: 1px solid var(--border-light);
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+      .floating-action-bar {
+        bottom: 16px;
+        right: 16px;
+      }
+      .float-btn span {
+        display: none;
+      }
+      .float-btn {
+        padding: 14px;
+        border-radius: 50%;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="top">
-  <span>📍 Balaramapuram, Thiruvananthapuram, Kerala</span>
-  <span>📞 <a href="tel:8943028069">8943028069</a> &nbsp;|&nbsp; <a href="tel:8848328069">8848328069</a></span>
-  <span>✉️ <a href="mailto:vmcom26@gmail.com">vmcom26@gmail.com</a> &nbsp;|&nbsp; <a href="mailto:emithramblpm@gmail.com">emithramblpm@gmail.com</a></span>
-</div>
 
-<header>
-  <div class="brand"><div class="mark">VM</div><div><h1>VM <span>ASSOCIATES</span></h1><div class="tag">Empowering Your Financial Needs</div></div></div>
-</header>
+  <!-- Ambient Light Mesh -->
+  <div class="bg-mesh"></div>
 
-<nav>
-  <a href="#home">Home</a><a href="#loans">Loan Services</a><a href="#insurance">Insurance Services</a><a href="#services">Other Services</a><a href="#contact">Contact Us</a>
-  <a class="wa" href="https://wa.me/918848328069">💬 Chat on WhatsApp</a>
-</nav>
-
-<div class="hero" id="home">
-  <div>
-    <h2>Your Dreams<br><span>Our Support</span></h2>
-    <p>Reliable, transparent and customer-focused assistance for your financial and digital needs.</p>
-    <a class="btn" href="#loans">Explore Services</a>
-    <a class="btn gold" href="#contact">Contact Us</a>
-  </div>
-  <div class="hero-box">
-    <strong>All Your Financial & Digital Needs Under One Roof</strong>
-    <p>💰 Loans &nbsp; 🛡️ Insurance &nbsp; 💻 Digital Services</p>
-    <p class="priority">Your needs, our priority.</p>
-  </div>
-</div>
-
-<section id="loans">
-  <h2 class="section-title">Our Main Services</h2>
-  <div class="grid">
-    <div class="card loan">
-      <h3>💰 Loan Services</h3>
-      <ul>
-        <li>Home Loan</li>
-        <li>Loan Against Property</li>
-        <li>Business Loan</li>
-        <li>Salaried Personal Loan</li>
-      </ul>
-    </div>
-    <div class="card insurance" id="insurance">
-      <h3>🛡️ Insurance Services</h3>
-      <ul>
-        <li><b>All Vehicle Insurance</b> — Car, Bike, Commercial Vehicle, Bus, Truck & Fleet</li>
-        <li>Health Insurance</li>
-        <li>Travel Insurance</li>
-      </ul>
+  <!-- Top Announcement & Contact Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-items">
+        <span class="top-bar-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Balaramapuram, Thiruvananthapuram, Kerala
+        </span>
+        <a class="top-bar-item" href="tel:8943028069">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          8943028069 / 8848328069
+        </a>
+        <a class="top-bar-item" href="mailto:vmcom26@gmail.com">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          vmcom26@gmail.com
+        </a>
+      </div>
+      <div class="badge-status">
+        <span class="badge-status-dot"></span>
+        <span>Office Open • Mon-Sat 9AM - 7PM</span>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="other" id="services">
-  <div class="other-inner">
-    <h2 class="section-title">Our Other Services</h2>
-    <div class="service-grid">
-      <div class="service"><div class="icon">✈️</div><b>Flight, Railway & Bus Ticketing</b></div>
-      <div class="service"><div class="icon">🛂</div><b>Passport & Attestation</b></div>
-      <div class="service"><div class="icon">✍️</div><b>Digital Signature (DSC)</b></div>
-      <div class="service"><div class="icon">💻</div><b>E-Mithram & Online Services</b></div>
-      <div class="service"><div class="icon">📄</div><b>Document Assistance</b></div>
+  <!-- Main Navigation Header -->
+  <header>
+    <div class="header-container">
+      <a href="#home" class="brand-link">
+        <div class="brand-mark">VM</div>
+        <div class="brand-text">
+          <h1>VM <span>ASSOCIATES</span></h1>
+          <div class="tagline">Empowering Your Financial Needs</div>
+        </div>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <nav id="main-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#loans" class="nav-link">Loan Services</a>
+        <a href="#insurance" class="nav-link">Insurance</a>
+        <a href="#calculator" class="nav-link">EMI Calculator</a>
+        <a href="#services" class="nav-link">Other Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/918848328069" class="nav-cta" target="_blank" rel="noopener noreferrer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            Trusted Financial Consultancy in Kerala
+          </div>
+          
+          <h2 class="hero-title">
+            Your Dreams, <span class="gradient-text">Our Support.</span><br>
+            Smart Finance <span class="gold-accent">Made Easy.</span>
+          </h2>
+          
+          <p class="hero-desc">
+            Reliable, transparent, and customer-focused guidance for Home Loans, Business Capital, Vehicle Insurance, and Digital Citizen Portals.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSequIOsbqgUex-PdGNVMqxaNETB2UKFxBgS_Ks0aWSkLDIqmA/viewform?pli=1" class="btn btn-gold" id="hero-callback-btn">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Book CallBack
+            </a>
+            <a href="#loans" class="btn btn-primary">
+              Explore Services
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#calculator" class="btn btn-outline">Calculate EMI</a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <h3>₹50Cr+</h3>
+              <p>Loan Guidance Facilitated</p>
+            </div>
+            <div class="hero-stat-item">
+              <h3>100%</h3>
+              <p>Transparent Guidance</p>
+            </div>
+            <div class="hero-stat-item">
+              <h3>24/7</h3>
+              <p>WhatsApp Assistance</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card -->
+        <div class="hero-card">
+          <div class="card-badge-top">
+            <span>Fast-Track Solutions</span>
+            <div style="font-size: 0.8rem; font-weight: 700; color: #16a34a;">● Verified Partners</div>
+          </div>
+          <h3 class="hero-card-title">All Your Financial & Digital Needs Under One Roof</h3>
+          <p class="hero-card-sub">Choose a category to get immediate doorstep documentation & expert assistance.</p>
+          
+          <div class="service-mini-list">
+            <div class="service-mini-item">
+              <div class="mini-icon gold">
+                <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              </div>
+              <div class="mini-text">
+                <b>Home & Business Loans</b>
+                <span>Lowest interest rates & doorstep pickup</span>
+              </div>
+            </div>
+
+            <div class="service-mini-item">
+              <div class="mini-icon blue">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div class="mini-text">
+                <b>All Vehicle & Health Insurance</b>
+                <span>Instant policy issuance & claim assistance</span>
+              </div>
+            </div>
+
+            <div class="service-mini-item">
+              <div class="mini-icon green">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="mini-text">
+                <b>Digital Signature & Citizen Portals</b>
+                <span>E-Mithram, DSC & ticket bookings</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSequIOsbqgUex-PdGNVMqxaNETB2UKFxBgS_Ks0aWSkLDIqmA/viewform?pli=1" class="btn btn-gold" style="width: 100%;">
+            Get Free Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Grid -->
+    <section id="loans">
+      <div class="section-header">
+        <span class="section-eyebrow">Comprehensive Financial Suite</span>
+        <h2 class="section-title">Our Flagship Services</h2>
+        <p class="section-subtitle">Tailored loan options and protective insurance plans crafted to empower your personal and business milestones.</p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- Loan Services Card -->
+        <div class="service-card loan-card">
+          <div>
+            <div class="card-top-header">
+              <div class="card-header-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><line x1="12" y1="6" x2="12" y2="8"></line><line x1="12" y1="16" x2="12" y2="18"></line></svg>
+              </div>
+              <div>
+                <h3>Loan Services</h3>
+                <span class="tag-badge">Flexible Tenures & Quick Disbursal</span>
+              </div>
+            </div>
+
+            <ul class="service-item-list">
+              <li>
+                <div class="check-badge">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Home Loan</strong>
+                  <span>Purchase, construction, plot purchase, and balance transfer assistance with leading banks.</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="check-badge">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Loan Against Property (LAP)</strong>
+                  <span>Unlock the value of your commercial or residential property for substantial liquidity.</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="check-badge">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Business Loan</strong>
+                  <span>Unsecured and secured working capital loans to scale retail, trading, and enterprise operations.</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="check-badge">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Salaried Personal Loan</strong>
+                  <span>Fast processing for emergency requirements, weddings, travel, and medical needs.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-footer-action">
+            <span class="note">Doorstep document pickup available</span>
+            <a class="btn btn-gold" id="book-callback-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSequIOsbqgUex-PdGNVMqxaNETB2UKFxBgS_Ks0aWSkLDIqmA/viewform?pli=1">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Book CallBack
+            </a>
+          </div>
+        </div>
+
+        <!-- Insurance Services Card -->
+        <div class="service-card insurance-card" id="insurance">
+          <div>
+            <div class="card-top-header">
+              <div class="card-header-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <h3>Insurance Services</h3>
+                <span class="tag-badge">Instant Policy • Hassle-free Claims</span>
+              </div>
+            </div>
+
+            <ul class="service-item-list">
+              <li>
+                <div class="check-badge">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>All Vehicle Insurance</strong>
+                  <span>Comprehensive and 3rd party cover for Cars, Two-Wheelers, Commercial Vehicles, Buses, Trucks & Fleet.</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="check-badge">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Health Insurance</strong>
+                  <span>Cashless treatment across premier hospitals, individual health covers, and family floater plans.</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="check-badge">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Travel Insurance</strong>
+                  <span>Worldwide medical coverage, flight cancellation protection, and baggage loss safeguards.</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="check-badge">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Claims Assistance & Renewal Reminders</strong>
+                  <span>Never miss a renewal date; direct on-ground assistance during insurance claims.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-footer-action">
+            <span class="note">Instant digital policy sent via WhatsApp</span>
+            <a class="btn btn-primary" href="https://wa.me/918848328069?text=Hi%20VM%20Associates,%20I%20would%20like%20an%20Insurance%20Quote." target="_blank" rel="noopener noreferrer">
+              Get Insurance Quote
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive EMI Calculator Section -->
+    <section id="calculator">
+      <div class="calculator-section">
+        <div class="section-header" style="margin-bottom: 20px;">
+          <span class="section-eyebrow">Smart Planning Tool</span>
+          <h2 class="section-title">Loan EMI Calculator</h2>
+          <p class="section-subtitle">Plan your monthly budget with our interactive calculator before applying.</p>
+        </div>
+
+        <div class="calc-grid">
+          <div class="calc-sliders">
+            
+            <div class="calc-group">
+              <div class="calc-label-row">
+                <span>Loan Amount</span>
+                <span class="calc-value-display" id="disp-amount">₹25,00,000</span>
+              </div>
+              <input type="range" class="calc-slider" id="slider-amount" min="100000" max="10000000" step="50000" value="2500000">
+              <div class="calc-slider-limits">
+                <span>₹1 Lakh</span>
+                <span>₹1 Crore</span>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <div class="calc-label-row">
+                <span>Interest Rate (% P.A.)</span>
+                <span class="calc-value-display" id="disp-rate">8.75%</span>
+              </div>
+              <input type="range" class="calc-slider" id="slider-rate" min="6.5" max="18.0" step="0.25" value="8.75">
+              <div class="calc-slider-limits">
+                <span>6.5%</span>
+                <span>18.0%</span>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <div class="calc-label-row">
+                <span>Loan Tenure (Years)</span>
+                <span class="calc-value-display" id="disp-tenure">15 Years</span>
+              </div>
+              <input type="range" class="calc-slider" id="slider-tenure" min="1" max="30" step="1" value="15">
+              <div class="calc-slider-limits">
+                <span>1 Year</span>
+                <span>30 Years</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="calc-result-box">
+            <div class="calc-result-header">Estimated Monthly EMI</div>
+            <div class="calc-emi-amount" id="calc-emi">₹24,988</div>
+            
+            <div class="calc-breakdown-row">
+              <span>Principal Amount</span>
+              <b id="calc-principal">₹25,00,000</b>
+            </div>
+            <div class="calc-breakdown-row">
+              <span>Total Interest Payable</span>
+              <b id="calc-interest">₹19,97,840</b>
+            </div>
+            <div class="calc-breakdown-row">
+              <span>Total Payment (Principal + Interest)</span>
+              <b id="calc-total">₹44,97,840</b>
+            </div>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSequIOsbqgUex-PdGNVMqxaNETB2UKFxBgS_Ks0aWSkLDIqmA/viewform?pli=1" class="btn btn-gold calc-cta-btn">
+              Apply For This Loan
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Digital & Citizen Services -->
+    <section id="services">
+      <div class="other-services-wrapper">
+        <div class="section-header">
+          <span class="section-eyebrow">Citizen Portals & Documentation</span>
+          <h2 class="section-title">Our Digital & Online Services</h2>
+          <p class="section-subtitle">Fast, secure, and hassle-free assistance for essential travel, government registrations, and legal identity works.</p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <div class="bento-card">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"></path></svg>
+            </div>
+            <h4>Ticketing Services</h4>
+            <p>Flight, Railway (Tatkal/General) & Bus ticket bookings with real-time seat confirmation assistance.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"></rect><circle cx="12" cy="10" r="3"></circle><path d="M7 17a5 5 0 0 1 10 0"></path></svg>
+            </div>
+            <h4>Passport & Attestation</h4>
+            <p>New passport applications, re-issuance, PCC assistance, and document attestation.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            </div>
+            <h4>Digital Signature (DSC)</h4>
+            <p>Class 3 DSC for e-tendering, company incorporation, GST, and MCA filings with quick USB token issuance.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h4>E-Mithram & Online Portals</h4>
+            <p>Government certificate applications, utility bill payments, Ration card, and election ID updates.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h4>Document Assistance</h4>
+            <p>Affidavit preparation, online registration, property deed guidance, and print/scan services.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose VM Associates -->
+    <section>
+      <div class="section-header">
+        <span class="section-eyebrow">The VM Advantage</span>
+        <h2 class="section-title">Why Clients Rely On Us</h2>
+        <p class="section-subtitle">We bridge the gap between complex banking paperwork and quick, stress-free approvals.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon-pill">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h4>Multi-Bank Networks</h4>
+          <p>We work with premier national and private banking partners to find you the lowest rate of interest.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-pill">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h4>Rapid Turnaround</h4>
+          <p>Streamlined documentation processes ensure speedy approvals without repeated visits.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-pill">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h4>Dedicated Advisor</h4>
+          <p>Personalized attention from consultation to disbursal and policy hand-over.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-pill">
+            <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <h4>Zero Hidden Charges</h4>
+          <p>Complete transparency at every step so you know exactly what to expect.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section>
+      <div class="section-header">
+        <span class="section-eyebrow">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Answers to common queries regarding our loans, insurance, and service procedures.</p>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="faq-accordion">
+          
+          <div class="faq-item active">
+            <button class="faq-trigger">
+              <span>What documents are required to apply for a Home Loan?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              Typically, you will need Identity proof (Aadhaar/PAN), Address proof, last 6 months' bank statements, 3 months' salary slips (or 2-3 years ITR for business owners), and property documents. We provide doorstep guidance to verify and collect your paperwork.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>How does the "Book CallBack" service work?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              Clicking the "Book CallBack" button opens our fast inquiry form. Once submitted with your basic requirements and contact number, one of our experienced financial consultants will reach out to you within a few hours to guide you forward.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Can I get vehicle insurance renewed instantly?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              Yes! For bikes, private cars, or commercial fleet vehicles, you can send your previous policy and RC copy via WhatsApp to 8848328069. We will issue your new policy document digitally in under 15 minutes.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Are there services for self-employed individuals and small businesses?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-content">
+              Yes, we have specialized banking tie-ups for MSME business loans, collateral-free loans, and Loan Against Property (LAP) specifically designed for traders, contractors, and self-employed professionals in Kerala.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact">
+      <div class="contact-banner">
+        <div class="contact-banner-grid">
+          <div>
+            <h2>Ready to Get Started? Reach Out Today.</h2>
+            <p>Speak directly with our team in Balaramapuram or schedule a priority callback for customized financial solutions.</p>
+            
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSequIOsbqgUex-PdGNVMqxaNETB2UKFxBgS_Ks0aWSkLDIqmA/viewform?pli=1" class="btn btn-gold">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                Book CallBack
+              </a>
+              <a href="https://wa.me/918848328069" class="btn btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.12); display: inline-flex; align-items: center; gap: 10px;" target="_blank" rel="noopener noreferrer">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info-cards">
+            <a href="tel:8943028069" class="contact-pill-item">
+              <div class="contact-pill-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-pill-text">
+                <b>Call Direct Assistance</b>
+                <span>8943028069 / 8848328069</span>
+              </div>
+            </a>
+
+            <a href="mailto:vmcom26@gmail.com" class="contact-pill-item">
+              <div class="contact-pill-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-pill-text">
+                <b>Email Inquiries</b>
+                <span>vmcom26@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="mailto:emithramblpm@gmail.com" class="contact-pill-item">
+              <div class="contact-pill-icon">
+                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="contact-pill-text">
+                <b>E-Mithram & Digital Desk</b>
+                <span>emithramblpm@gmail.com</span>
+              </div>
+            </a>
+
+            <div class="contact-pill-item" style="pointer-events: none;">
+              <div class="contact-pill-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-pill-text">
+                <b>Office Location</b>
+                <span>Balaramapuram, Thiruvananthapuram, Kerala</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Floating Action Buttons -->
+  <div class="floating-action-bar">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSequIOsbqgUex-PdGNVMqxaNETB2UKFxBgS_Ks0aWSkLDIqmA/viewform?pli=1" class="float-btn callback" title="Book Priority CallBack">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Book CallBack</span>
+    </a>
+    <a href="https://wa.me/918848328069" class="float-btn wa" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      <span>WhatsApp Us</span>
+    </a>
   </div>
-</section>
 
-<section class="contact" id="contact">
-  <h2>Contact VM Associates</h2>
-  <p>📞 <a href="tel:8943028069">8943028069</a> &nbsp; | &nbsp; <a href="tel:8848328069">8848328069</a></p>
-  <p>✉️ <a href="mailto:vmcom26@gmail.com">vmcom26@gmail.com</a></p>
-  <p>✉️ <a href="mailto:emithramblpm@gmail.com">emithramblpm@gmail.com</a></p>
-  <a class="btn gold" href="https://wa.me/918848328069">WhatsApp Us</a>
-</section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>VM <span>ASSOCIATES</span></h2>
+        <p>Empowering people and building futures through seamless loan facilitation, dependable insurance shields, and digital citizen services.</p>
+        <p style="margin-top: 14px; font-size: 0.8rem; color: #94a3b8;">📍 Balaramapuram, Thiruvananthapuram, Kerala</p>
+      </div>
 
-<footer>
-  <strong>VM ASSOCIATES</strong>
-  <span>Empowering People | Building Futures</span>
-  <span>© 2026 VM Associates</span>
-</footer>
+      <div class="footer-links">
+        <h4>Core Offerings</h4>
+        <ul>
+          <li><a href="#loans">Home Loan Consultation</a></li>
+          <li><a href="#loans">Loan Against Property (LAP)</a></li>
+          <li><a href="#loans">Business & MSME Loans</a></li>
+          <li><a href="#insurance">All Vehicle Insurance</a></li>
+          <li><a href="#insurance">Health & Family Protection</a></li>
+          <li><a href="#calculator">Loan EMI Calculator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Direct Connect</h4>
+        <ul>
+          <li><a href="tel:8943028069">Phone: 8943028069</a></li>
+          <li><a href="tel:8848328069">Mobile: 8848328069</a></li>
+          <li><a href="mailto:vmcom26@gmail.com">vmcom26@gmail.com</a></li>
+          <li><a href="mailto:emithramblpm@gmail.com">emithramblpm@gmail.com</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSequIOsbqgUex-PdGNVMqxaNETB2UKFxBgS_Ks0aWSkLDIqmA/viewform?pli=1">Priority CallBack Request</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 VM Associates. All Rights Reserved.</span>
+      <span>Empowering People | Building Futures</span>
+    </div>
+  </footer>
+
+  <!-- Interactive Logic -->
+  <script>
+    // Mobile navigation toggle
+    const mobileBtn = document.getElementById('mobile-toggle');
+    const mainNav = document.getElementById('main-nav');
+    if (mobileBtn && mainNav) {
+      mobileBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-active');
+      });
+      document.querySelectorAll('#main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('nav-active');
+        });
+      });
+    }
+
+    // FAQ Accordion functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const trigger = item.querySelector('.faq-trigger');
+      trigger.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // EMI Calculator Logic
+    const sliderAmount = document.getElementById('slider-amount');
+    const sliderRate = document.getElementById('slider-rate');
+    const sliderTenure = document.getElementById('slider-tenure');
+
+    const dispAmount = document.getElementById('disp-amount');
+    const dispRate = document.getElementById('disp-rate');
+    const dispTenure = document.getElementById('disp-tenure');
+
+    const calcEmi = document.getElementById('calc-emi');
+    const calcPrincipal = document.getElementById('calc-principal');
+    const calcInterest = document.getElementById('calc-interest');
+    const calcTotal = document.getElementById('calc-total');
+
+    function formatINR(val) {
+      return '₹' + Math.round(val).toLocaleString('en-IN');
+    }
+
+    function calculateEMI() {
+      const P = parseFloat(sliderAmount.value);
+      const annualRate = parseFloat(sliderRate.value);
+      const years = parseFloat(sliderTenure.value);
+
+      const r = (annualRate / 12) / 100;
+      const n = years * 12;
+
+      dispAmount.textContent = formatINR(P);
+      dispRate.textContent = annualRate.toFixed(2) + '%';
+      dispTenure.textContent = years + (years === 1 ? ' Year' : ' Years');
+
+      if (r === 0) {
+        const emi = P / n;
+        calcEmi.textContent = formatINR(emi);
+        calcPrincipal.textContent = formatINR(P);
+        calcInterest.textContent = '₹0';
+        calcTotal.textContent = formatINR(P);
+        return;
+      }
+
+      const emi = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+      const totalPayment = emi * n;
+      const totalInterest = totalPayment - P;
+
+      calcEmi.textContent = formatINR(emi);
+      calcPrincipal.textContent = formatINR(P);
+      calcInterest.textContent = formatINR(totalInterest);
+      calcTotal.textContent = formatINR(totalPayment);
+    }
+
+    if (sliderAmount && sliderRate && sliderTenure) {
+      sliderAmount.addEventListener('input', calculateEMI);
+      sliderRate.addEventListener('input', calculateEMI);
+      sliderTenure.addEventListener('input', calculateEMI);
+      calculateEMI();
+    }
+  </script>
 </body>
 </html>
